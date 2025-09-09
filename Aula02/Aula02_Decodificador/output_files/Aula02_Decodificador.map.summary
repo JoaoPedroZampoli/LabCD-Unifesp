@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Sep  9 14:14:28 2025
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+Revision Name : Aula02_Decodificador
+Top-level Entity Name : Aula02_Decodificador
+Family : Cyclone IV E
+Total logic elements : 4
+    Total combinational functions : 4
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

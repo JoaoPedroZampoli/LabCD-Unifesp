@@ -1,0 +1,6 @@
+|Aula02_Or
+Saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+A => inst.IN1
+
+

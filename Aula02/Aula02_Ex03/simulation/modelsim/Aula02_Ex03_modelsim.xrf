@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, /home/joao.zampoli/LabCD/Aula02_Ex03/Aula02_Ex03.bdf
+source_file = 1, /home/joao.zampoli/LabCD/Aula02_Ex03/Waveform.vwf
+source_file = 1, /home/joao.zampoli/LabCD/Aula02_Ex03/db/Aula02_Ex03.cbx.xml
+design_name = Aula02_Ex03
+instance = comp, \S~output , S~output, Aula02_Ex03, 1
+instance = comp, \IN3~input , IN3~input, Aula02_Ex03, 1
+instance = comp, \IN2~input , IN2~input, Aula02_Ex03, 1
+instance = comp, \IN1~input , IN1~input, Aula02_Ex03, 1
+instance = comp, \inst7~0 , inst7~0, Aula02_Ex03, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

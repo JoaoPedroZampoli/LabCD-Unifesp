@@ -1,0 +1,130 @@
+$comment
+	File created using the following command:
+		vcd file Aula02_Or.msim.vcd -direction
+$end
+$date
+	Tue Sep  9 13:59:12 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module Aula02_Or_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var wire 1 # Saida $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * Saida~output_o $end
+$var wire 1 + B~input_o $end
+$var wire 1 , A~input_o $end
+$var wire 1 - inst~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+1%
+x&
+1'
+1(
+1)
+0*
+0+
+0,
+0-
+$end
+#5000
+1!
+1,
+1-
+1*
+1#
+#10000
+1"
+0!
+1+
+0,
+#15000
+1!
+1,
+#20000
+0"
+0!
+0+
+0,
+0-
+0*
+0#
+#25000
+1!
+1,
+1-
+1*
+1#
+#30000
+1"
+0!
+1+
+0,
+#35000
+1!
+1,
+#40000
+0"
+0!
+0+
+0,
+0-
+0*
+0#
+#45000
+1!
+1,
+1-
+1*
+1#
+#50000
+1"
+0!
+1+
+0,
+#55000
+1!
+1,
+#60000
+0"
+0!
+0+
+0,
+0-
+0*
+0#
+#65000
+1!
+1,
+1-
+1*
+1#
+#70000
+1"
+0!
+1+
+0,
+#75000
+1!
+1,
+#80000
