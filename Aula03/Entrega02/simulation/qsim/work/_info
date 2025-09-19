@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/joao.zampoli/LabCD/Aula03/Entrega02/simulation/qsim
+vDecodificadorII
+Z1 !s110 1758307557
+!i10b 1
+!s100 :TJMXHHcSCARi4V?n@Bd70
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICS`TffTjR>m2ZZgFET`L[3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1758307556
+Z5 8DecodificadorII.vo
+Z6 FDecodificadorII.vo
+!i122 2
+L0 32 339
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1758307557.000000
+Z9 !s107 DecodificadorII.vo|
+Z10 !s90 -work|work|DecodificadorII.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@decodificador@i@i
+vDecodificadorII_vlg_vec_tst
+R1
+!i10b 1
+!s100 VRTXIG<P@2ml72@Rh?Za40
+R2
+IXd@_e<P0iThoe74GhlT?j2
+R3
+R0
+w1758307555
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 3
+L0 30 68
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R11
+R12
+n@decodificador@i@i_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 T>UoDC9]B<:F3Y2CcAI;a3
+R2
+IKigRfAhKYXQZk27E:_czM1
+R3
+R0
+R4
+R5
+R6
+!i122 2
+L0 372 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
