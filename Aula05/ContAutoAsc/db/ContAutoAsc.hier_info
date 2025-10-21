@@ -1,0 +1,61 @@
+|ContAutoAsc
+A <= ContadorAssincrono:inst1.A
+Reset => inst12.IN1
+Reset => ContadorAssincrono:inst1.Reset
+Clock => inst5.IN0
+B <= ContadorAssincrono:inst1.B
+C <= ContadorAssincrono:inst1.C
+D <= ContadorAssincrono:inst1.D
+E <= ContadorAssincrono:inst1.E
+F <= ContadorAssincrono:inst1.F
+G <= ContadorAssincrono:inst1.G
+pin_name1 <= <GND>
+
+
+|ContAutoAsc|ContadorAssincrono:inst1
+A <= Decodificador:inst.a
+Reset => inst13.IN0
+Clock => inst14.IN0
+B <= Decodificador:inst.b
+C <= Decodificador:inst.c
+D <= Decodificador:inst.d
+E <= Decodificador:inst.e
+F <= Decodificador:inst.f
+G <= Decodificador:inst.g
+
+
+|ContAutoAsc|ContadorAssincrono:inst1|Decodificador:inst
+a <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+W => inst16.IN0
+W => inst.IN0
+W => inst1.IN0
+X => inst17.IN0
+X => inst.IN1
+X => inst8.IN0
+X => inst7.IN0
+X => inst6.IN0
+X => inst14.IN0
+X => inst10.IN0
+Y => inst18.IN0
+Y => inst1.IN1
+Y => inst6.IN1
+Y => inst27.IN1
+Y => inst14.IN1
+Y => inst4.IN1
+Y => inst5.IN0
+Z => inst15.IN3
+Z => inst19.IN0
+Z => inst7.IN2
+Z => inst14.IN2
+Z => inst3.IN1
+Z => inst2.IN1
+Z => inst12.IN2
+Z => inst5.IN1
+b <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+
+

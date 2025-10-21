@@ -1,0 +1,311 @@
+$comment
+	File created using the following command:
+		vcd file ContadorSincrono.msim.vcd -direction
+$end
+$date
+	Fri Sep 26 18:06:13 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module ContadorSincrono_vlg_vec_tst $end
+$var reg 1 ! Clock $end
+$var reg 1 " Reset $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 % c $end
+$var wire 1 & d $end
+$var wire 1 ' e $end
+$var wire 1 ( f $end
+$var wire 1 ) g $end
+
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 a~output_o $end
+$var wire 1 1 b~output_o $end
+$var wire 1 2 c~output_o $end
+$var wire 1 3 d~output_o $end
+$var wire 1 4 e~output_o $end
+$var wire 1 5 f~output_o $end
+$var wire 1 6 g~output_o $end
+$var wire 1 7 Clock~input_o $end
+$var wire 1 8 inst9~0_combout $end
+$var wire 1 9 Reset~input_o $end
+$var wire 1 : inst13~combout $end
+$var wire 1 ; inst9~q $end
+$var wire 1 < inst|inst28~1_combout $end
+$var wire 1 = inst4~q $end
+$var wire 1 > inst3~0_combout $end
+$var wire 1 ? inst3~q $end
+$var wire 1 @ inst|inst26~0_combout $end
+$var wire 1 A inst|inst28~0_combout $end
+$var wire 1 B inst|inst27~0_combout $end
+$var wire 1 C inst|inst30~0_combout $end
+$var wire 1 D inst|inst23~0_combout $end
+$var wire 1 E inst|inst24~0_combout $end
+$var wire 1 F inst|inst25~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+1)
+0*
+1+
+x,
+1-
+1.
+1/
+00
+01
+02
+03
+04
+05
+16
+07
+18
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+1F
+$end
+#5000
+1!
+17
+#10000
+0!
+07
+1;
+1E
+1D
+1C
+1@
+1<
+08
+10
+13
+14
+15
+1(
+1'
+1&
+1#
+#15000
+1!
+17
+#20000
+0!
+07
+0;
+1=
+0F
+0D
+0C
+1B
+0@
+18
+00
+12
+03
+04
+06
+0)
+0'
+0&
+1%
+0#
+#25000
+1!
+17
+#30000
+0!
+07
+1;
+1D
+0B
+1>
+0<
+08
+02
+14
+1'
+0%
+#35000
+1!
+17
+#40000
+0!
+07
+0;
+0=
+1?
+0E
+1C
+1@
+18
+10
+13
+05
+0(
+1&
+1#
+#45000
+1!
+17
+#50000
+0!
+07
+1;
+0C
+1A
+0@
+1<
+08
+00
+11
+03
+0&
+1$
+0#
+#55000
+1!
+17
+#60000
+0!
+07
+0;
+1=
+0D
+18
+04
+0'
+#65000
+1!
+17
+#70000
+0!
+07
+1;
+1F
+1E
+1D
+1C
+0A
+0>
+0<
+08
+01
+13
+14
+15
+16
+1)
+1(
+1'
+1&
+0$
+#75000
+1!
+17
+#80000
+0!
+07
+0;
+0=
+0?
+0E
+0D
+0C
+18
+03
+04
+05
+0(
+0'
+0&
+#85000
+1!
+17
+#90000
+0!
+07
+1;
+1E
+1D
+1C
+1@
+1<
+08
+10
+13
+14
+15
+1(
+1'
+1&
+1#
+#95000
+1!
+17
+#100000
+1"
+0!
+19
+07
+1:
+0;
+0E
+0D
+0C
+0@
+0<
+18
+00
+03
+04
+05
+0(
+0'
+0&
+0#
+#105000
+1!
+17
+0:
+#110000
+0!
+07
+1:
+#115000
+1!
+17
+0:
+#120000

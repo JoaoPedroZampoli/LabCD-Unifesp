@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/joao.zampoli/LabCD/Aula05/ContAutoAsc/simulation/qsim
+vContAutoAsc
+Z1 !s110 1759518679
+!i10b 1
+!s100 Te5l_e_YK2]b0gEEmIbH:1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IcO7;HjfDC2F^gn?91FL[R2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1759518678
+Z5 8ContAutoAsc.vo
+Z6 FContAutoAsc.vo
+!i122 10
+L0 32 1935
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1759518679.000000
+Z9 !s107 ContAutoAsc.vo|
+Z10 !s90 -work|work|ContAutoAsc.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@cont@auto@asc
+vContAutoAsc_vlg_vec_tst
+R1
+!i10b 1
+!s100 B@`jM_J9lbfGm6A20aRAm0
+R2
+IOhnZNL319GJDhzRT7@PSQ2
+R3
+R0
+w1759518677
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 11
+L0 30 46
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@cont@auto@asc_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 3NQHQ5?[Vjn6cf0Y?6mzZ0
+R2
+IcLFCkOkfz>1@ShN]n<zPF2
+R3
+R0
+R4
+R5
+R6
+!i122 10
+L0 1968 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

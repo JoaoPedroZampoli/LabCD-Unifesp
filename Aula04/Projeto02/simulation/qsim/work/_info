@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/joao.zampoli/LabCD/Aula04/Projeto02/simulation/qsim
+vContadorSincrono
+Z1 !s110 1758909972
+!i10b 1
+!s100 <5IThR`?6m47KQ^iE2hLf2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^l7hz]YLAdEo2L01^mbXS2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1758909971
+Z5 8ContadorSincrono.vo
+Z6 FContadorSincrono.vo
+!i122 12
+L0 32 443
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1758909972.000000
+Z9 !s107 ContadorSincrono.vo|
+Z10 !s90 -work|work|ContadorSincrono.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@contador@sincrono
+vContadorSincrono_vlg_vec_tst
+R1
+!i10b 1
+!s100 T_EeX0]Qb4b<fT<>aFJ4l3
+R2
+I3o2TSgXcg]=f7O9?4K[oe1
+R3
+R0
+w1758909970
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 13
+L0 30 47
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@contador@sincrono_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 LnLB?3nAM8eGKoR;Xf[>_1
+R2
+IlRlf3UfEjOD9:GL=]8VX80
+R3
+R0
+R4
+R5
+R6
+!i122 12
+L0 476 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
