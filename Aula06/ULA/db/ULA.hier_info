@@ -1,0 +1,252 @@
+|ULA
+LSB <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+A3 => ORCompleto:inst2.A3
+A3 => ANDCompleto:inst3.A3
+A3 => inst7.IN0
+A2 => ORCompleto:inst2.A2
+A2 => ANDCompleto:inst3.A2
+A2 => inst6.IN0
+A1 => ORCompleto:inst2.A1
+A1 => ANDCompleto:inst3.A1
+A1 => inst10.IN0
+A0 => ORCompleto:inst2.A0
+A0 => ANDCompleto:inst3.A0
+A0 => inst11.IN0
+B3 => ORCompleto:inst2.B3
+B3 => ANDCompleto:inst3.B3
+B3 => inst12.IN0
+B2 => ORCompleto:inst2.B2
+B2 => ANDCompleto:inst3.B2
+B2 => inst13.IN0
+B1 => ORCompleto:inst2.B1
+B1 => ANDCompleto:inst3.B1
+B1 => inst14.IN0
+B0 => ORCompleto:inst2.B0
+B0 => ANDCompleto:inst3.B0
+B0 => inst15.IN0
+SEL0 => MUX:inst.SEL0
+SEL1 => MUX:inst.SEL1
+LSB1 <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+LSB2 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+MSB <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= SubtratorCompleto:inst1.Cout
+Cin => inst8.IN0
+BB => inst9.IN0
+A <= Decodificador:inst35.a
+B <= Decodificador:inst35.b
+C <= Decodificador:inst35.c
+D <= Decodificador:inst35.d
+E <= Decodificador:inst35.e
+F <= Decodificador:inst35.f
+G <= Decodificador:inst35.g
+
+
+|ULA|ORCompleto:inst2
+AB0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+B0 => inst.IN0
+A0 => inst.IN1
+SEL => inst4.IN1
+SEL => inst5.IN1
+SEL => inst6.IN1
+SEL => inst7.IN1
+AB1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B1 => inst1.IN0
+A1 => inst1.IN1
+AB2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+B2 => inst2.IN0
+A2 => inst2.IN1
+AB3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+B3 => inst3.IN0
+A3 => inst3.IN1
+
+
+|ULA|MUX:inst
+AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
+SEL0 => inst4.IN0
+SEL0 => inst1.IN0
+SEL0 => inst7.IN0
+SEL0 => inst3.IN0
+SEL1 => inst5.IN0
+SEL1 => inst6.IN0
+SEL1 => inst2.IN1
+SEL1 => inst3.IN1
+OR <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+SOMA/SUB <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+MULT <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|ANDCompleto:inst3
+AB0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst.IN0
+B0 => inst.IN1
+SEL => inst4.IN1
+SEL => inst5.IN1
+SEL => inst6.IN1
+SEL => inst7.IN1
+AB1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+B1 => inst1.IN1
+AB2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst2.IN0
+B2 => inst2.IN1
+AB3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst3.IN0
+B3 => inst3.IN1
+
+
+|ULA|SubtratorCompleto:inst1
+AB1 <= SubtratorBit:inst3.Out
+A1 => SubtratorBit:inst3.A
+B1 => SubtratorBit:inst3.B
+A0 => SubtratorBit:inst.A
+B0 => SubtratorBit:inst.B
+Cin => SubtratorBit:inst.Cin
+BB => SubtratorBit:inst.BB
+BB => SubtratorBit:inst3.BB
+BB => SubtratorBit:inst4.BB
+BB => SubtratorBit:inst6.BB
+AB0 <= SubtratorBit:inst.Out
+AB2 <= SubtratorBit:inst4.Out
+A2 => SubtratorBit:inst4.A
+B2 => SubtratorBit:inst4.B
+AB3 <= SubtratorBit:inst6.Out
+A3 => SubtratorBit:inst6.A
+B3 => SubtratorBit:inst6.B
+Cout <= SubtratorBit:inst6.Cout
+
+
+|ULA|SubtratorCompleto:inst1|SubtratorBit:inst3
+Out <= SomadorCompletoBit:inst.Out
+A => SomadorCompletoBit:inst.A
+BB => inst5.IN0
+BB => inst2.IN0
+B => inst3.IN0
+B => inst4.IN1
+Cin => SomadorCompletoBit:inst.Cin
+Cout <= SomadorCompletoBit:inst.Cout
+
+
+|ULA|SubtratorCompleto:inst1|SubtratorBit:inst3|SomadorCompletoBit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst2.IN0
+A => inst.IN0
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cin => inst1.IN1
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN1
+Out <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|SubtratorCompleto:inst1|SubtratorBit:inst
+Out <= SomadorCompletoBit:inst.Out
+A => SomadorCompletoBit:inst.A
+BB => inst5.IN0
+BB => inst2.IN0
+B => inst3.IN0
+B => inst4.IN1
+Cin => SomadorCompletoBit:inst.Cin
+Cout <= SomadorCompletoBit:inst.Cout
+
+
+|ULA|SubtratorCompleto:inst1|SubtratorBit:inst|SomadorCompletoBit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst2.IN0
+A => inst.IN0
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cin => inst1.IN1
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN1
+Out <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|SubtratorCompleto:inst1|SubtratorBit:inst4
+Out <= SomadorCompletoBit:inst.Out
+A => SomadorCompletoBit:inst.A
+BB => inst5.IN0
+BB => inst2.IN0
+B => inst3.IN0
+B => inst4.IN1
+Cin => SomadorCompletoBit:inst.Cin
+Cout <= SomadorCompletoBit:inst.Cout
+
+
+|ULA|SubtratorCompleto:inst1|SubtratorBit:inst4|SomadorCompletoBit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst2.IN0
+A => inst.IN0
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cin => inst1.IN1
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN1
+Out <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|SubtratorCompleto:inst1|SubtratorBit:inst6
+Out <= SomadorCompletoBit:inst.Out
+A => SomadorCompletoBit:inst.A
+BB => inst5.IN0
+BB => inst2.IN0
+B => inst3.IN0
+B => inst4.IN1
+Cin => SomadorCompletoBit:inst.Cin
+Cout <= SomadorCompletoBit:inst.Cout
+
+
+|ULA|SubtratorCompleto:inst1|SubtratorBit:inst6|SomadorCompletoBit:inst
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst2.IN0
+A => inst.IN0
+Cin => inst3.IN1
+Cin => inst4.IN1
+Cin => inst1.IN1
+B => inst4.IN0
+B => inst2.IN1
+B => inst.IN1
+Out <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Decodificador:inst35
+a <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+W => inst16.IN0
+W => inst.IN0
+W => inst1.IN0
+X => inst17.IN0
+X => inst.IN1
+X => inst8.IN0
+X => inst7.IN0
+X => inst6.IN0
+X => inst14.IN0
+X => inst10.IN0
+Y => inst18.IN0
+Y => inst1.IN1
+Y => inst6.IN1
+Y => inst27.IN1
+Y => inst14.IN1
+Y => inst4.IN1
+Y => inst5.IN0
+Z => inst15.IN3
+Z => inst19.IN0
+Z => inst7.IN2
+Z => inst14.IN2
+Z => inst3.IN1
+Z => inst2.IN1
+Z => inst12.IN2
+Z => inst5.IN1
+b <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/ULA.qarlog
+
+Archive:	C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/ULA.qar
+Date:		Tue Oct 21 08:05:47 2025
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/4BitNot.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/ANDCompleto.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/Decodificador.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/MUX.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/ORCompleto.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/SelectSumSub.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/SomadorCompleto.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/SomadorCompletoBit.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/SubtratorBit.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/ULA.bdf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/ULA.qpf
+C:/Users/jpsza/OneDrive/Documentos/GitHub/Pessoal/LabCD-Unifesp/Aula06/ULA.qsf
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 13 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
