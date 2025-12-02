@@ -1,0 +1,24 @@
+module DivisorFreq (
+    input CLK,
+    output reg S
+);
+
+    reg [25:0] OUT;
+
+    initial begin
+        OUT = 0;
+        S = 0;
+    end
+
+    always @ (posedge CLK) begin
+        if (OUT == 26'd49999999) begin
+            OUT <= 26'd0;
+            S <= 1'b1; // Gera o pulso (nível alto)
+        end
+        else begin
+            OUT <= OUT + 1;
+            S <= 1'b0; // Volta para zero imediatamente no próximo ciclo
+        end
+    end
+
+endmodule

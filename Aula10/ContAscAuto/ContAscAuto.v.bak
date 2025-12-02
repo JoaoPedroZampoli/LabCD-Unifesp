@@ -1,0 +1,24 @@
+module Projeto2_Top (
+    input  CLOCK_50,
+    input  SW0,
+    output [6:0] HEX1
+);
+
+	wire clk_lento;
+	wire [3:0] fios_contagem;
+	
+	DivisorFreq(
+		.CLK(CLOCK_50),
+		.S(clk_lento)
+	);
+	
+	ContadorAuto(
+		.clock(clk_lento),
+		.reset(SW0),
+		.q(fios_contagem)
+	);
+	
+	DecodificadorBCD(
+		.in(fios_contagem),
+		.out(HEX1)
+	);

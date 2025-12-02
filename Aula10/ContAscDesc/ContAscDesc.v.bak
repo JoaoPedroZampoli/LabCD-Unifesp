@@ -1,0 +1,15 @@
+module ContAscDesc(
+	input KEY3,
+	input SW17,
+	input SW0;
+	output [6:0] HEX1
+);
+
+	wire [3:0] fios;
+	
+	Contador(
+		.clock(KEY3),
+		.reset(SW17),
+		.mode(SW0),
+		.q(fios)
+	);

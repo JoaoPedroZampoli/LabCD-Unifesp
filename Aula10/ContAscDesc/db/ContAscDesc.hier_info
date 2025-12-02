@@ -1,0 +1,55 @@
+|ContAscDesc
+KEY3 => button_inverted.IN1
+SW17 => SW17.IN1
+SW0 => SW0.IN1
+clock_fpga => clock_fpga.IN1
+HEX1[0] << DecodificadorBCD:comb_6.a
+HEX1[1] << DecodificadorBCD:comb_6.b
+HEX1[2] << DecodificadorBCD:comb_6.c
+HEX1[3] << DecodificadorBCD:comb_6.d
+HEX1[4] << DecodificadorBCD:comb_6.e
+HEX1[5] << DecodificadorBCD:comb_6.f
+HEX1[6] << DecodificadorBCD:comb_6.g
+
+
+|ContAscDesc|FiltroDigital:comb_4
+clock_fpga => Q3.CLK
+clock_fpga => Q2.CLK
+clock_fpga => Q1.CLK
+button_input => Q1.DATAIN
+button_output <= button_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContAscDesc|Contador:comb_5
+clock => q[0]~reg0.CLK
+clock => q[1]~reg0.CLK
+clock => q[2]~reg0.CLK
+clock => q[3]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+modo => q.OUTPUTSELECT
+modo => q.OUTPUTSELECT
+modo => q.OUTPUTSELECT
+modo => q.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContAscDesc|DecodificadorBCD:comb_6
+W => Decoder0.IN0
+X => Decoder0.IN1
+Y => Decoder0.IN2
+Z => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
