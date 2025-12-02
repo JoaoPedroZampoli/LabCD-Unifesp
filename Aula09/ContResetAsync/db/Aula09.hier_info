@@ -1,0 +1,41 @@
+|ContadorCresc
+KEY3 => KEY3.IN1
+SW17 => SW17.IN1
+HEX1[0] << DecodificadorBCD:comb_4.a
+HEX1[1] << DecodificadorBCD:comb_4.b
+HEX1[2] << DecodificadorBCD:comb_4.c
+HEX1[3] << DecodificadorBCD:comb_4.d
+HEX1[4] << DecodificadorBCD:comb_4.e
+HEX1[5] << DecodificadorBCD:comb_4.f
+HEX1[6] << DecodificadorBCD:comb_4.g
+
+
+|ContadorCresc|Contador:comb_3
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+rst => q[0]~reg0.ACLR
+rst => q[1]~reg0.ACLR
+rst => q[2]~reg0.ACLR
+rst => q[3]~reg0.ACLR
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ContadorCresc|DecodificadorBCD:comb_4
+W => Decoder0.IN0
+X => Decoder0.IN1
+Y => Decoder0.IN2
+Z => Decoder0.IN3
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
